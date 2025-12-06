@@ -1,0 +1,7 @@
+{
+  "device_id": "ESP32-001",
+  "location": "Living Room",
+  "sampling_rate": 5,
+  "broker_url": "mqtt://test.mosquitto.org",
+  "topic": ["temperature","humidity"]
+}
