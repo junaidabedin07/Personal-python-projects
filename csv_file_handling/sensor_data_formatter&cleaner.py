@@ -26,7 +26,7 @@ with open("sectionA_problem1_messy_sensor_logs.csv") as csvfile:
         print(f"{row['timestamp']}                    {row['temp_C']}")
 
     #removing null values
-    new_df = df.dropna()
+    new_df = df.dropna().copy()#new_df was just a filtered view...we need to copy
     print("\n CLEANED DATA ")
     print(new_df)
     new_df.to_csv("cleaned_data.csv", index=False)
@@ -38,3 +38,4 @@ with open("sectionA_problem1_messy_sensor_logs.csv") as csvfile:
     #fixing some of the data
     new_df['temp_C'] = (new_df['temp_C']*9/5)+32
 
+    df.to_csv("cleaned_data.csv", index=False)
