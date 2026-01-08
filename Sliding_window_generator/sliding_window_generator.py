@@ -15,3 +15,5 @@ def slider(array,a):
         i += 1
 L = [1,2,3,4,5,6,7,8,9,10,11,12,13]
 print(list(slider(L,3)))
+
+#use json or CSVs for better understanding of both the topics
